@@ -30,7 +30,7 @@ def test_convertStatusProgress(dummyImage):
 def test_convertStatusFinished(dummyImage):
     convertResponse = requests.post('http://localhost:5000/convertImage', data=json.dumps(dummyImage), headers={"content-type": "application/json"})
     taskId = convertResponse.json().get('token')
-    time.sleep(0.5)
+    time.sleep(2)
     response = requests.get('http://localhost:5000/status/' + taskId, headers={"content-type": "application/json"})
     assert response.status_code == 200
     assert response.json().get('status') == "SUCCESS"
