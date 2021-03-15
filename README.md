@@ -52,7 +52,7 @@ docker-compose up -d --build
 
 * Sample Call
 
-  curl http://localhost:5000/status/<token>
+  curl http://localhost:5000/status/{token}
 
 ### Dependencies
 
