@@ -75,3 +75,5 @@ python -m pytest
 ## Architecture
 
 ![Architecture](./Architecture.png)
+
+Ragavendran Thangavelu
